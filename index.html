@@ -1,1 +1,153 @@
+```html
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Zomerbar Menu</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(
+        rgba(255, 200, 100, 0.5),
+        rgba(255, 150, 80, 0.7)
+    ),
+    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: #3b2415;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+}
+
+header h1 {
+    font-size: 55px;
+    text-shadow: 2px 2px 5px #000;
+}
+
+header p {
+    font-size: 22px;
+}
+
+/* Menu kaart */
+.menu {
+    background: rgba(255,255,255,0.9);
+    max-width: 700px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.menu h2 {
+    text-align: center;
+    color: #e67e22;
+    margin-bottom: 20px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    font-size: 20px;
+}
+
+.prijs {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+/* Knop */
+.button {
+    display: block;
+    width: fit-content;
+    margin: 30px auto 0;
+    padding: 15px 30px;
+    background: #27ae60;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 18px;
+}
+
+.button:hover {
+    background: #219150;
+}
+
+/* Mobiel */
+@media(max-width:600px){
+    header h1 {
+        font-size: 40px;
+    }
+
+    .item {
+        font-size: 17px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>🌴 Zomerbar 🌴</h1>
+    <p>Geniet van heerlijke drankjes, hapjes en zomerse sfeer</p>
+</header>
+
+
+<div class="menu">
+
+<h2>🍹 Onze Menukaart</h2>
+
+<div class="item">
+    <span>🍺 Fris pintje</span>
+    <span class="prijs">€2,50</span>
+</div>
+
+<div class="item">
+    <span>🍹 Cocktail van de dag</span>
+    <span class="prijs">€8,00</span>
+</div>
+
+<div class="item">
+    <span>🥤 Verse limonade</span>
+    <span class="prijs">€4,00</span>
+</div>
+
+<div class="item">
+    <span>🍟 Frietjes</span>
+    <span class="prijs">€3,50</span>
+</div>
+
+<div class="item">
+    <span>🍔 Zomerburger</span>
+    <span class="prijs">€12,00</span>
+</div>
+
+
+<a class="button" href="#">
+    Bekijk volledige kaart
+</a>
+
+</div>
+
+</body>
+</html>
+```
 
